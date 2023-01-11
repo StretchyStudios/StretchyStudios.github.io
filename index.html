@@ -1,0 +1,283 @@
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+var topbar = document.createElement('div');
+topbar.style.position = 'fixed';
+topbar.style.top = '0';
+topbar.style.left = '0';
+topbar.style.width = '100%';
+topbar.style.height = '50px';
+topbar.style.backgroundColor = '#ccc';
+topbar.style.zIndex = '100';
+document.body.appendChild(topbar);
+
+topbar.style.backgroundColor = '#000';
+
+var topbarImage = document.createElement('img');
+topbarImage.src = 'https://cdn.discordapp.com/icons/945031989222846524/648b5810aab50da365c6d5e580f71807.webp?size=480';
+topbarImage.style.position = 'absolute';
+topbarImage.style.top = '0';
+topbarImage.style.left = '0';
+topbarImage.style.width = '50px';
+topbarImage.style.height = '50px';
+topbarImage.style.zIndex = '101';
+document.body.appendChild(topbarImage);
+
+topbarImage.onclick = function() {
+  window.location.href = 'https://StretchyStudio.github.io';
+};
+
+document.body.style.backgroundColor = '#222';
+
+var button1 = document.createElement('button');
+button1.innerHTML = 'Button 1';
+button1.style.position = 'absolute';
+button1.style.top = '0';
+button1.style.left = '50px';
+button1.style.width = '100px';
+button1.style.height = '50px';
+button1.style.zIndex = '101';
+document.body.appendChild(button1);
+
+var button2 = document.createElement('button');
+button2.innerHTML = 'Button 2';
+button2.style.position = 'absolute';
+button2.style.top = '0';
+button2.style.left = '150px';
+button2.style.width = '100px';
+button2.style.height = '50px';
+button2.style.zIndex = '101';
+document.body.appendChild(button2);
+
+var button3 = document.createElement('button');
+button3.innerHTML = 'Button 3';
+button3.style.position = 'absolute';
+button3.style.top = '0';
+button3.style.left = '250px';
+button3.style.width = '100px';
+button3.style.height = '50px';
+button3.style.zIndex = '101';
+document.body.appendChild(button3);
+
+button1.style.left = 'auto';
+button1.style.right = '250px';
+button2.style.left = 'auto';
+button2.style.right = '150px';
+button3.style.left = 'auto';
+button3.style.right = '50px';
+
+button1.style.backgroundColor = '#000';
+button2.style.backgroundColor = '#000';
+button3.style.backgroundColor = '#000';
+
+button1.style.color = '#fff';
+button1.style.border = '1px solid #000';
+button2.style.color = '#fff';
+button2.style.border = '1px solid #000';
+button3.style.color = '#fff';
+button3.style.border = '1px solid #000';
+
+button1.onmouseover = function() {
+  button1.style.textDecoration = 'underline';
+};
+button1.onmouseout = function() {
+  button1.style.textDecoration = 'none';
+};
+button2.onmouseover = function() {
+  button2.style.textDecoration = 'underline';
+};
+button2.onmouseout = function() {
+  button2.style.textDecoration = 'none';
+};
+button3.onmouseover = function() {
+  button3.style.textDecoration = 'underline';
+};
+button3.onmouseout = function() {
+  button3.style.textDecoration = 'none';
+};
+
+button3.innerHTML = 'Services';
+
+button2.innerHTML = 'Examples';
+
+button1.innerHTML = 'Contribute';
+
+var topbarText = document.createElement('div');
+topbarText.innerHTML = 'Stretchy Studios';
+topbarText.style.position = 'absolute';
+topbarText.style.top = '0';
+topbarText.style.left = '50px';
+topbarText.style.width = 'auto';
+topbarText.style.height = '50px';
+topbarText.style.zIndex = '101';
+topbarText.style.color = '#fff';
+topbarText.style.fontSize = '20px';
+topbarText.style.fontFamily = 'Arial';
+topbarText.style.fontWeight = 'bold';
+topbarText.style.lineHeight = '50px';
+document.body.appendChild(topbarText);
+
+topbarText.style.left = '60px';
+
+document.title = 'Stretchy Studios';
+
+var favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = 'https://cdn.discordapp.com/icons/945031989222846524/648b5810aab50da365c6d5e580f71807.webp?size=480';
+document.head.appendChild(favicon);
+
+var bigText = document.createElement('div');
+bigText.innerHTML = 'Stretchy Studios!';
+bigText.style.position = 'absolute';
+bigText.style.top = '50px';
+bigText.style.left = '0';
+bigText.style.width = '100%';
+bigText.style.height = 'auto';
+bigText.style.zIndex = '101';
+bigText.style.color = '#fff';
+bigText.style.fontSize = '100px';
+bigText.style.fontFamily = 'Arial';
+bigText.style.fontWeight = 'bold';
+bigText.style.textAlign = 'center';
+document.body.appendChild(bigText);
+
+bigText.style.fontSize = '75px';
+
+bigText.style.top = '150px';
+
+var smallText = document.createElement('div');
+smallText.innerHTML = 'Join us';
+smallText.style.position = 'absolute';
+smallText.style.top = '250px';
+smallText.style.left = '0';
+smallText.style.width = '100%';
+smallText.style.height = 'auto';
+smallText.style.zIndex = '101';
+smallText.style.color = '#ccc';
+smallText.style.fontSize = '25px';
+smallText.style.fontFamily = 'Arial';
+smallText.style.fontWeight = 'bold';
+smallText.style.textAlign = 'center';
+document.body.appendChild(smallText);
+
+smallText.style.color = '#bbb';
+
+var box = document.createElement('div');
+box.style.position = 'absolute';
+box.style.top = '300px';
+box.style.left = '0';
+box.style.width = '600px';
+box.style.height = '300px';
+box.style.zIndex = '101';
+box.style.backgroundColor = '#fff';
+box.style.border = '1px solid #000';
+document.body.appendChild(box);
+
+box.style.left = 'calc(50% - 300px)';
+
+var button4 = document.createElement('button');
+button4.innerHTML = 'Button 4';
+button4.style.position = 'absolute';
+button4.style.top = '300px';
+button4.style.left = '0';
+button4.style.width = '100px';
+button4.style.height = '50px';
+button4.style.zIndex = '101';
+button4.style.backgroundColor = '#000';
+button4.style.color = '#fff';
+button4.style.border = '1px solid #000';
+document.body.appendChild(button4);
+
+var button5 = document.createElement('button');
+button5.innerHTML = 'Button 5';
+button5.style.position = 'absolute';
+button5.style.top = '300px';
+button5.style.left = 'auto';
+button5.style.right = '0';
+button5.style.width = '100px';
+button5.style.height = '50px';
+button5.style.zIndex = '101';
+button5.style.backgroundColor = '#000';
+button5.style.color = '#fff';
+button5.style.border = '1px solid #000';
+document.body.appendChild(button5);
+
+button4.style.top = '425px';
+button5.style.top = '425px';
+
+button4.style.left = 'calc(50% - 300px)';
+button5.style.right = 'calc(50% - 300px)';
+
+button4.innerHTML = '<';
+
+button5.innerHTML = '>';
+
+button4.style.width = '50px';
+button5.style.width = '50px';
+
+button4.style.borderRadius = '25px';
+button5.style.borderRadius = '25px';
+
+button4.style.opacity = '0.5';
+button5.style.opacity = '0.5';
+
+button4.onmouseover = function() {
+  button4.style.opacity = '0.8';
+};
+button4.onmouseout = function() {
+  button4.style.opacity = '0.5';
+};
+button5.onmouseover = function() {
+  button5.style.opacity = '0.8';
+};
+button5.onmouseout = function() {
+  button5.style.opacity = '0.5';
+};
+
+var boxText = document.createElement('div');
+boxText.innerHTML = '1/2';
+boxText.style.position = 'absolute';
+boxText.style.top = '600px';
+boxText.style.left = '0';
+boxText.style.width = '100%';
+boxText.style.height = 'auto';
+boxText.style.zIndex = '101';
+boxText.style.color = '#fff';
+boxText.style.fontSize = '20px';
+boxText.style.fontFamily = 'Arial';
+boxText.style.textAlign = 'center';
+document.body.appendChild(boxText);
+
+var boxImage = document.createElement('img');
+boxImage.src = 'https://stretchystudios.weebly.com/uploads/1/4/1/0/141095638/p22_orig.png';
+boxImage.style.position = 'absolute';
+boxImage.style.top = '0';
+boxImage.style.left = '0';
+boxImage.style.width = '100%';
+boxImage.style.height = '100%';
+boxImage.style.zIndex = '101';
+box.appendChild(boxImage);
+
+button5.onclick = function() {
+  boxText.innerHTML = '2/2';
+  boxImage.src = 'https://stretchystudios.weebly.com/uploads/1/4/1/0/141095638/p21_orig.png';
+};
+
+button4.onclick = function() {
+  boxText.innerHTML = '1/2';
+  boxImage.src = 'https://stretchystudios.weebly.com/uploads/1/4/1/0/141095638/p22_orig.png';
+};
+
+bigText.style.top = '100px';
+smallText.style.top = '200px';
+box.style.top = '250px';
+button4.style.top = '375px';
+button5.style.top = '375px';
+boxText.style.top = '560px';
+});
+        </script>
+    </head>
+</html>
